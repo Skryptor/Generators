@@ -22,14 +22,15 @@ class FlatIterator:
         self.cursor2 += 1
         return result
 
-import types
 
 
 def flat_generator(list_of_lists):
+    for sublist in list_of_lists:
+        for item in sublist:
+            yield item
 
-    ...
-    yield
-    ...
+
+
 
 
 
